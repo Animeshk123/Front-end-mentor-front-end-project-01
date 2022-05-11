@@ -12,6 +12,10 @@
   transition: none !important;
 }
 
+body{
+  background-color: var(--Almost-White);
+}
+
 
 :root {
   --Almost-White: hsl(0, 0%, 98%);
@@ -64,7 +68,11 @@ header .container nav .navbar_links ul li a {
   text-decoration: none;
   display: block;
   padding: 0.7rem 0.7rem;
-  color: black;
+  color: var(--Medium-Gray);
+}
+
+header .container nav .navbar_links ul li a:hover{
+  color: var(--Almost-Black);
 }
 
 header .container nav .navbar_links ul li .up_icon {
@@ -105,18 +113,30 @@ header .container nav .navbar_cta button {
   padding: 0.8rem 1rem;
   background: transparent;
   cursor: pointer;
+  color:var(--Medium-Gray);
+}
+
+header .container nav .navbar_cta button:hover{
+  color: var(--Almost-Black);
 }
 
 header .container nav .navbar_cta a {
   text-decoration: none;
-  color: black;
+  color: var(--Medium-Gray);
+}
+
+header .container nav .navbar_cta a:hover{
+  color:var(--Almost-Black);
 }
 
 header .container nav .navbar_cta a:last-child button {
-  border: 1px solid black;
+  border: 1px solid var(--Medium-Gray);
   border-radius: 6px;
 }
 
+header .container nav .navbar_cta a:last-child button:hover{
+  border-color: var(--Almost-Black);
+}
 
 
 .drop_down {
@@ -223,12 +243,14 @@ header .container nav .navbar_cta a:last-child button {
 
 #hero .hero_container .flex .flex-1 h1 {
   font-size: 4rem;
+  color: var(--Almost-Black);
 }
 
 #hero .hero_container .flex .flex-1 p {
   padding-top: 1.5rem;
   font-size: 1.2rem;
   line-height: 1.5;
+  color: var(--Medium-Gray);
 }
 
 #hero .hero_container .flex .flex-1 a button {
