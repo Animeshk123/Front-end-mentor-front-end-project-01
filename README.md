@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [click here](https://front-end-mentor-front-end-project-01.vercel.app/)
 
 ## My process
 
@@ -86,7 +86,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Animesh kumbhakar](https://https://animeshkumbhakar.netlify.app)
+- Website - [Animesh kumbhakar](https://animeshkumbhakar.netlify.app)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
