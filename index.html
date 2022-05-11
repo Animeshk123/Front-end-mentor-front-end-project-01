@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Animesh kumbhakar">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+  <script src="./js/index.js" defer></script>
+  <base href="./images/">
+</head>
+
+<body class="load">
+  <!-- ===================================================================================== -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">
+          <img src="logo.svg" alt="logo" />
+        </a>
+      </div>
+      <nav class="">
+        <div class="navbar_links">
+          <div class="ham_menu closed">
+            <img src="icon-close-menu.svg" alt="close menu" class="closeNav"/>
+          </div>
+          <ul>
+            <li class="down menu">
+              <a>
+                Features
+                <img class="up_icon" src="icon-arrow-up.svg" alt="up" />
+                <img class="down_icon" src="icon-arrow-down.svg" alt="down" />
+              </a>
+              <div class="drop_down one">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="icon-todo.svg" alt="Todo List" />
+                      Todo List
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="icon-calendar.svg" alt="Calender" />
+                      Calender
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="icon-reminders.svg" alt="Reminders" />
+                      Reminders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="icon-planning.svg" alt="Planning" />
+                      Planning
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="down menu">
+              <a>
+                Company
+                <img class="up_icon" src="icon-arrow-up.svg" alt="up" />
+                <img class="down_icon" src="icon-arrow-down.svg" alt="down" />
+              </a>
+              <div class="drop_down two">
+                <ul>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="navbar_cta">
+          <a href="#"><button type="button">Login</button></a>
+          <a href="#"><button type="button">Register</button></a>
+        </div>
+      </nav>
+      <!-- //only visiable on mobile -->
+      <div class="ham_menu opened">
+        <img src="icon-menu.svg" alt="menu" class="openNav"/>
+      </div>
+      <!-- //only visiable on mobile -->
+    </div>
+  </header>
+
+  <!-- ===================================================================================== -->
+
+  <section id="hero">
+    <div class="hero_container">
+      <div class="flex">
+        <div class="row flex-1">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.</p>
+          <a href="#"><button type="button">Learn more</button></a>
+          <div class="clients">
+            <img src="client-databiz.svg" alt="clients" />
+            <img src="client-audiophile.svg" alt="clients" />
+            <img src="client-meet.svg" alt="clients" />
+            <img src="client-maker.svg" alt="clients" />
+          </div>
+        </div>
+        <div class="row flex-2">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="overlay"></div>
+</body>
+
+</html>
