@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+
+.load * {
+  transition: none !important;
+}
+
+
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
+/* ==================================================================================== */
+
+header {
+  width: 100%;
+  height: auto;
+  padding-top: 0.4rem;
+}
+
+header .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0.4rem 1.1rem;
+}
+
+header .container nav {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container nav .navbar_links ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 2.2rem;
+
+}
+
+header .container nav .navbar_links ul li {
+  list-style: none;
+  margin-left: 0.4rem;
+  position: relative;
+  cursor: pointer;
+}
+
+header .container nav .navbar_links ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 0.7rem 0.7rem;
+  color: black;
+}
+
+header .container nav .navbar_links ul li .up_icon {
+  margin-left: 0.3rem;
+}
+
+header .container nav .navbar_links ul li .down_icon {
+  margin-left: 0.3rem;
+}
+
+
+header .container nav .navbar_links ul li.down .up_icon {
+  display: none;
+}
+
+header .container nav .navbar_links ul li.up .down_icon {
+  display: none;
+}
+
+
+header .container .logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 0.95rem;
+  height: 100%;
+
+}
+
+header .container nav .navbar_cta {
+  height: 100%;
+}
+
+header .container nav .navbar_cta button {
+  border: none;
+  outline: none;
+  margin-left: 0.5rem;
+  padding: 0.8rem 1rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+header .container nav .navbar_cta a {
+  text-decoration: none;
+  color: black;
+}
+
+header .container nav .navbar_cta a:last-child button {
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+
+
+.drop_down {
+  position: absolute;
+  margin-top: 0.7rem;
+  padding: 0.6rem;
+  background: white;
+  box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.drop_down ul {
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.drop_down ul li {
+  list-style: none;
+}
+
+.drop_down ul li a {
+  text-decoration: none;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0.3rem 0;
+}
+
+
+.drop_down ul li a img {
+  margin-right: 0.4rem;
+}
+
+
+.one {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.open .one {
+  opacity: 1;
+  pointer-events: all !important;
+}
+
+
+.two {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+
+.open .two {
+  opacity: 1;
+  pointer-events: all !important;
+}
+
+.drop_down.two {
+  width: 150px !important;
+}
+
+.drop_down.two ul li a {
+  text-align: center !important;
+}
+
+.ham_menu {
+  display: none;
+}
+
+/* ==================================================================================== */
+
+#hero {
+  width: 100%;
+  height: auto;
+  margin-top: 4rem;
+}
+
+#hero .hero_container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.1rem;
+}
+
+#hero .hero_container .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1.2rem;
+}
+
+#hero .hero_container .flex .row {
+  height: auto;
+}
+
+#hero .hero_container .flex .flex-1 {
+  width: 50%;
+}
+
+#hero .hero_container .flex .flex-1 h1 {
+  font-size: 4rem;
+}
+
+#hero .hero_container .flex .flex-1 p {
+  padding-top: 1.5rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+#hero .hero_container .flex .flex-1 a button {
+  margin-top: 1.7rem;
+  border: none;
+  outline: none;
+  padding: 1.1rem 1.2rem;
+  font-size: 1rem;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+#hero .hero_container .flex .flex-1 button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+
+#hero .hero_container .flex .flex-1 a {
+  text-decoration: none;
+}
+
+
+#hero .hero_container .flex .flex-2 {
+  width: 50%;
+  height: 470px;
+  background-image: url('../images/image-hero-desktop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.clients {
+  margin-top: 2rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.clients img {
+  margin-right: 1rem;
+}
+
+/* ==================================================================== */
+
+@media screen and (max-width:800px) {
+  html {
+    font-size: 14px !important;
+  }
+
+  #hero {
+    margin-top: 2.5rem !important;
+  }
+
+  .flex-1 {
+    width: 60% !important;
+  }
+
+  .flex-2 {
+    width: 40% !important;
+  }
+}
+
+
+/* =============================================================== */
+
+@media screen and (max-width:600px) {
+  
+  #hero .hero_container .flex .flex-2 {
+    background-image: url('../images/image-hero-mobile.png')!important;
+    height: 300px!important;
+  }
+  
+
+  .ham_menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer !important;
+    height: 100%;
+    padding: 0.2rem 0;
+  }
+
+  .ham_menu img {
+    cursor: pointer !important;
+  }
+
+  header .container nav {
+    all: initial;
+    position: fixed !important;
+    background: white;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 60%;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+    z-index: 300;
+    transform: translateX(100%);
+    transition: transform 0.2s ease;
+    /* display: none; */
+
+  }
+
+  header .container nav .ham_menu {
+    width: 100% !important;
+    width: 100% !important;
+    padding: 0.6rem 1.3rem;
+    margin: 0 !important;
+    height: 70px !important;
+    justify-content: flex-end !important;
+    cursor: pointer;
+  }
+
+  header .container nav .navbar_links ul {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  header .container nav .navbar_links ul li {
+    margin: 0.7rem 0 !important;
+  }
+
+  header .container nav .navbar_cta {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 1rem;
+  }
+
+  header .container nav .navbar_cta button {
+    margin: 0.4rem 0 !important;
+    display: block !important;
+  }
+
+
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+  }
+
+  .opened .closeNav {
+    display: none;
+  }
+
+  .closed .openNav {
+    display: none;
+  }
+
+  #hero {
+    margin-top: 1.5rem !important;
+  }
+
+  #hero .hero_container .flex {
+    flex-direction: column-reverse !important;
+    gap: 4rem !important;
+  }
+
+
+  #hero .hero_container .flex .row {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  #hero .hero_container .flex .row h1 {
+    font-size: 3rem !important;
+  }
+
+  #hero .hero_container .flex .row button {
+    margin-top: 2.5rem !important;
+  }
+
+  #hero .hero_container .flex .row .clients {
+    margin-top: 2.6rem !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.4rem 1.1rem !important;
+  }
+
+  #hero .hero_container .flex .row .clients img {
+    width: 23% !important;
+    padding: 0 0.6rem !important;
+    margin: 0 !important;
+  }
+
+  .drop_down {
+    position: relative !important;
+    margin-left: 1rem !important;
+    box-shadow: none;
+    display: none;
+  }
+
+  .open .one {
+    display: block !important;
+  }
+
+  .open .two {
+    display: block !important;
+
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+
+nav.opennav {
+  transform: translateX(0) !important;
+}
+
+.overlay.show {
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
